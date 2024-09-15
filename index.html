@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html  lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adnan's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/9f3628705c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/portfolio.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Experience</a></li>
+                <li><a href="#portfolio">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p><span id="element"></span></p>
+            <h1>Hi, I'm <span>Adnan Sherwani</span> <br>based in Toronto, Canada </h1>
+        </div>
+        <a href="Sherwani Adnan Resume.docx" download class="btn btn2">Download CV</a>
+    </div>
+</div>
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script>
+    var typed = new Typed('#element', {
+      strings: ['Data Analyst', 'BI Analyst', 'Data Scientist', 'Data Analyst | BI Analyst | Data Scientist'],
+      typeSpeed: 50,
+    });
+  </script>
+<!---------------------about section------------------->
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/About Me.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Highly motivated Data Analyst with over 4 years of extensive experience
+                     in the data intelligence and consumer insights industry. Proficient 
+                     in statistical analysis, data visualization, and maintaining data and
+                      ETL processes using Python, SQL, Power BI, Microsoft Excel, and Azure
+                       Cloud. Demonstrated success in management, data validation, and data
+                        transformation, with a strong focus on empowering teams to 
+                        efficiently analyze data and derive actionable insights. Completed
+                         a Post-Graduate degree in Predictive Analytics (Statistics) in 
+                         2023 in Canada. Skilled in collaborating with clients and 
+                         stakeholders to deliver innovative data solutions.</p>
+
+                <div class="tab-titles">
+                    <p class = "tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class = "tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class = "tab-links" onclick="opentab('education')">Education</p>
+                    <p class = "tab-links" onclick="opentab('certification')">Certification</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Programming & Data Analysis:</span><br>Python, Azure Synapse, Azure AI</li>
+                        <li><span>Data Visualization:</span><br>Microsoft Power BI, Excel, IBM Cognos</li>
+                        <li><span>Database Management:</span><br>SQL Server, PostGres</li>
+                        <li><span>Machine Learning/Statistical:</span><br>Regression, Classification, Clustering,
+                            Random Forest, Expotential Smoothing ETS, Logistic Regression, ETL</li>
+                        <li><span>Tools:</span><br>Visual Studio, Power Apps, Jupyter Notebook, Git,
+                            JIRA Confluence, Azure, Linux, Unix</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Junior Data Scientist Internship</span><br>Company: Magnify Access Inc<br>Duration: Feb 2024 - Apr 2024</li>
+                        <li><span>Data Analyst/Specialist</span><br>Company: GFK NielsenIQ<br>Duration: Jan 2020 - December 2022</li>
+                        <li><span>Data Associate/Practitioner</span><br>Company: IBM<br>Duration: Jul 2018 - Jan 2020</li>
+                        <li><span>Associate IT</span><br>Company: Corporate Executive Board (Gartner)<br>Duration: Oct 2016 - Apr 2017</li>
+                   </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Post-Graduate in Predictive Analytics</span><br>Conestoga College, Guelph, Canada<br>Duration: 2022-2023</li>
+                        <li><span>Bachelor of Technology</span><br>Dronacharya College of Engineering, Gurugram, India<br>Duration: 2012 - 2016</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="certification">
+                    <ul>
+                        <li><span>Microsoft Certified: Power BI Data Analyst PL-300</span><br>Issued: 2024</li>
+                        <li><span>Microsoft Certified:  Azure AI AZ-900</span><br>Issued: 2024</li>
+                        <li><span>IBM Blockchain Essentials</span><br>Issued: 2018</li>
+                        <li><span>SQL by Testdome</span><br>Issued: 2023</li>
+                        <li><span>Python by HackerRank</span><br>Issued: 2022</li>
+                        <li><span>RedHat RHCSA Completion</span><br>Issued: 2016</li>
+                        <li><span>Microsoft Certified: Fabric Analytics Engineer DP-600</span><br>Pursuing</li>
+                    </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!---------------------services section------------------->
+
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">Relevant Experience</h1>
+        <div class="services-list">
+            <div>
+                <img src="images/Magnify.png">
+                <h3>Junior Data Scientist Intern</h3>
+                <h4>Magnify Access Inc</h4>
+                <p>Feb 2024 - Apr 2024</p><br>
+                <p1>1. Developed and maintained data validation and ETL processes using
+                     Python, SQL, Power BI, Microsoft Excel, and Azure Cloud. </p1><br>
+                <a href="#">Read More</a>
+            </div>
+            <div>
+                <img src="images/gfk2.png">
+                <h3>Data Analyst / Specialist</h3>
+                <h4>GFK NielsenIQ</h4>
+                <p>Jan 2020 - Dec 2022<br><br>
+                1. Proficient in pattern detection to extract crucial insights from
+                     business processes using statistical techniques such as clustering, 
+                     classification</p>
+                <a href="#">Read More</a>
+            </div>
+            <div>
+                <img src="images/ibm.png">
+                <h3>Data Associate / Practitioner</h3>
+                <h4>IBM</h4>
+                <p>Jul 2018 - Jan 2020</p> <br>
+                <p1>1. Developed and maintained data validation and ETL processes using Python, SQL, Power BI, Microsoft Excel, and Azure Cloud.</p1><br>
+                <a href="#">Read More</a>
+            </div>
+            <div>
+                <img src="images/Gartner.png">
+                <h3>Associate Information Technology</h3>
+                <h4>CEB (Gartner)</h4>
+                <p>Oct 2016 - Apr 2017</p><br>
+                <p1>1. Developed and maintained data validation and ETL processes using Python, SQL, Power BI, Microsoft Excel, and Azure Cloud.</p1><br>
+                <a href="#">Read More</a>
+        </div>
+    </div>
+</div>
+
+<!---------------------portfolio section------------------->
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/IESO (1).png">
+                <div class="layer">
+                    <h3>IESO Ontario Energy Price</h3>
+                    <p>Develpoed various time series models to interpret
+                         the hourly requiremnt of energy and its prices</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/case.png">
+                <div class="layer">
+                    <h3>Case Studies</h3>
+                    <p> Understanding data and providing the conceptual overview of 
+                    house prices in US and case 1 deals with quantity  prices of items</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/hsc-2.png">
+                <div class="layer">
+                    <h3>Huntington Society Of Canada</h3>
+                    <p>Developed a predictive model to predict the future 
+                    prices of the house in Canada</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+</div>
+
+<!---------------------contact section------------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i>adnan.sherwani@outlook.com</p>
+                <p><i class="fa-solid fa-phone"></i>(416)670-7327</p>
+                <div class="social-icon">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    <a href=""><i class="fa-brands fa-github"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <a href="Sherwani Adnan Resume.docx" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Full Name" required>
+                    <input type="email" name="Email" placeholder="Email" required>
+                    <textarea placeholder="Message" name= "Message" rows="6" placeholder="Message"></textarea>
+                    <button type="submit" class="btn btn2">Send Message</button>
+                </form>
+                <span id="msg"></span>
+
+        </div>
+    </div>
+    <div class="copyright">
+        <p>&copy; 2024 Adnan Sherwani | All Rights Reserved <i class="fa-solid fa-trademark"></i></p>   
+</div>
+
+
+
+<script>
+    var tabLinks = document.getElementsByClassName("tab-links");
+    var tabContents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tabLinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabContents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+    var sidemeu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+       sidemeu.style.right= "-200px";
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxJwgLuXII1EqtGwyEt_cLq_GXiGHAYTa-dhcXatMbDoyZ-zE-46-DPLsxt9MJFgYghxg/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById('msg')
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message Sent Successfully"
+            setTimeout(() => {
+                msg.innerHTML = ""
+            }, 5000);
+            form.reset();
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
