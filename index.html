@@ -12,7 +12,7 @@
 <div id="header">
     <div class="container">
         <nav>
-            <img src="portfolio.png" class="logo">
+            <img src="images/portfolio.png" class="logo">
             <ul id="sidemenu">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -43,7 +43,7 @@
     <div class="container">
         <div class="row">
             <div class="about-col-1">
-                <img src="About Me.png">
+                <img src="images/About Me.png">
             </div>
             <div class="about-col-2">
                 <h1 class="sub-title">About Me</h1>
@@ -107,44 +107,65 @@
 <!---------------------services section------------------->
 
 <div id="services">
-    <div class="container">
+    <div class="container" id="blur">
         <h1 class="sub-title">Relevant Experience</h1>
         <div class="services-list">
             <div>
-                <img src="magnify.png">
+                <img src="images/Magnify.png">
                 <h3>Junior Data Scientist Intern</h3>
                 <h4>Magnify Access Inc</h4>
                 <p>Feb 2024 - Apr 2024</p><br>
-                <p1>1. Developed and maintained data validation and ETL processes using
-                     Python, SQL, Power BI, Microsoft Excel, and Azure Cloud. </p1><br>
-                <a href="#">Read More</a>
+                <p>Developed outcome-driven solutions for enhanced workplace accessibility, focusing on the application of Transformer models.</p><br
+                <a href="#" onclick="togglePopup(event, 'Magnify Access Inc', 'Feb 2024 - Apr 2024', 'Developed outcome-driven solutions for enhanced workplace accessibility, focusing on the application of Transformer models.'+
+                '|Utilized Python and Scikit-learn libraries to implement and optimize AI algorithms for workplace accessibility.'+
+                '|Conducted experimentation and evaluation of AI models, iterating on approaches to improve performance and accuracy.'+
+                '|Documented code, methodologies, and findings to ensure knowledge transfer and facilitate future developments.')">Read More</a>
             </div>
             <div>
-                <img src="gfk2.png">
+                <img src="images/gfk2.png">
                 <h3>Data Analyst / Specialist</h3>
                 <h4>GFK NielsenIQ</h4>
-                <p>Jan 2020 - Dec 2022<br><br>
-                1. Proficient in pattern detection to extract crucial insights from
-                     business processes using statistical techniques such as clustering, 
-                     classification</p>
-                <a href="#">Read More</a>
+                <p>Jan 2020 - Dec 2022</p><br>
+                <p>Proficient in pattern detection to extract crucial insights from business processes using statistical techniques such as clustering, classification, and regression, ensuring comprehensive coverage on a monthly and weekly basis.</p>
+                <a href="#" onclick="togglePopup(event, 'GFK NielsenIQ',
+                 'Jan 2020 - Dec 2022', 'Proficient in pattern detection to extract crucial insights from business processes using statistical techniques such as clustering, classification, and regression, ensuring comprehensive coverage on a monthly and weekly basis.'+
+                 '|Identified and implemented key metrics, enhancing business efficiency, utilized SQL (Snowflake and Oracle) and Python (Scikit-learn and Pandas) to manage and analyze large datasets. Driving a 20% increase in client satisfaction, potentially leading to higher retention rates or increased business from the region.'+
+                 '|Assisted clients in understanding market dynamics, consumer preferences, and competitive positioning, identifying potential market gaps for growth and aiding in the refinement of pricing strategies for maximum profitability.'+
+                 '|Communicated key findings through compelling data visualizations using PowerBI and Excel, effectively conveying complex insights to clients, achieving a track record of on-time report deliveries exceeding 95%.'+
+                 '|Provided regular feedback and proactive suggestions on the development of internal tools, including automation in Data Warehouse, JIRA, and Workflow Management tools, as part of GFK’s expert community group.'+
+                 '|Contributed to the Oracle-to-Azure Cloud transition, boosting database management efficiency by 18% and reducing time by 50%')">Read More</a>
             </div>
             <div>
-                <img src="IBM.png">
+                <img src="images/ibm.png">
                 <h3>Data Associate / Practitioner</h3>
                 <h4>IBM</h4>
-                <p>Jul 2018 - Jan 2020</p> <br>
-                <p1>1. Developed and maintained data validation and ETL processes using Python, SQL, Power BI, Microsoft Excel, and Azure Cloud.</p1><br>
-                <a href="#">Read More</a>
+                <p>Jul 2018 - Jan 2020</p><br>
+                <p>Supported data processing and analysis activities, including cleaning and organizing data, coding responses, and preparing data files for analysis.</p>
+                <a href="#" onclick="togglePopup(event, 'IBM', 'Jul 2018 - Jan 2020', 'Supported data processing and analysis activities, including cleaning and organizing data, coding responses, and preparing data files for analysis.'+
+                '|Ensured the accuracy and quality of data collected and analyzed, performing data checks, reviewing data sets, and assisting in quality control processes.'+
+                '|Created standardized reports with detailed findings using tools like IBM Cognos BI, SQL and Excel, providing useful insights.'+
+                '|Assisted in the preparation of research reports, presentations, and deliverables, including data visualization and report formatting.')">Read More</a>
             </div>
             <div>
-                <img src="Gartner.png">
+                <img src="images/Gartner.png">
                 <h3>Associate Information Technology</h3>
                 <h4>CEB (Gartner)</h4>
                 <p>Oct 2016 - Apr 2017</p><br>
-                <p1>1. Developed and maintained data validation and ETL processes using Python, SQL, Power BI, Microsoft Excel, and Azure Cloud.</p1><br>
-                <a href="#">Read More</a>
+                <p>Collected and analyzed data from vendors, establishing goals and presenting findings.</p>
+                <a href="#" onclick="togglePopup(event, 'CEB (Gartner)', 'Oct 2016 - Apr 2017', 'Collected and analyzed data from vendors, establishing goals and presenting findings.'+
+                '|Performed human resource insights from various enterprises, identifying management needs for effective business operations.')">Read More</a>
+            </div>
         </div>
+    </div>
+</div>
+
+<div id="popup" class="popup">
+    <div class="popup-content">
+        <i class="fa-solid fa-circle-xmark" onclick="togglePopup(event)"></i>
+        <h1 id="popup-title">Title</h1>
+        <p id="popup-date">Date</p>
+        <p id="popup-description">Description</p>
+        <a href="#" onclick="togglePopup(event)">Close</a>
     </div>
 </div>
 
@@ -155,25 +176,25 @@
         <h1 class="sub-title">Projects</h1>
         <div class="work-list">
             <div class="work">
-                <img src="IESO (1).png">
+                <img src="images/IESO (1).png">
                 <div class="layer">
                     <h3>IESO Ontario Energy Price</h3>
                     <p>Develpoed various time series models to interpret
-                         the hourly requirement of energy and its prices</p>
+                         the hourly requiremnt of energy and its prices</p>
                     <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                 </div>
             </div>
             <div class="work">
-                <img src="case.png">
+                <img src="images/case.png">
                 <div class="layer">
                     <h3>Case Studies</h3>
                     <p> Understanding data and providing the conceptual overview of 
-                    house prices in the US and case 1 deals with quantity  prices of items</p>
+                    house prices in US and case 1 deals with quantity  prices of items</p>
                         <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                 </div>
             </div>
             <div class="work">
-                <img src="hsc-2.png">
+                <img src="images/hsc-2.png">
                 <div class="layer">
                     <h3>Huntington Society Of Canada</h3>
                     <p>Developed a predictive model to predict the future 
@@ -192,7 +213,7 @@
         <div class="row">
             <div class="contact-left">
                 <h1 class="sub-title">Contact Me</h1>
-                <p><i class="fa-solid fa-envelope"></i>adnan.sherwani@outlook.com</p>
+                <p><i class="fa-solid fa-envelope"></i><a href="mailto:adnan.sherwani@outlook.com">adnan.sherwani@outlook.com</a></p>
                 <p><i class="fa-solid fa-phone"></i>(416) 670-7327</p>
                 <div class="social-icon">
                     <a href=""><i class="fa-brands fa-facebook"></i></a>
@@ -261,6 +282,34 @@
         })
         .catch(error => console.error('Error!', error.message))
     })
+  </script>
+
+  <script>
+    function togglePopup(event, title, date, description) {
+        event.preventDefault();
+        var popup = document.getElementById("popup");
+        var blur = document.getElementById("blur");
+        var popupTitle = document.getElementById("popup-title");
+        var popupDate = document.getElementById("popup-date");
+        var popupDescription = document.getElementById("popup-description");
+
+        if (title && date && description) {
+            popupTitle.innerText = title;
+            popupDate.innerText = date;
+            
+                // Split the description by the delimiter and create a list
+            var descriptionItems = description.split('|');
+            var descriptionHtml = '<ul>';
+            descriptionItems.forEach(function(item) {
+                descriptionHtml += '<li>' + item.trim() + '</li>';
+            });
+            descriptionHtml += '</ul>';
+            popupDescription.innerHTML = descriptionHtml;
+        }
+
+        popup.classList.toggle("active");
+        blur.classList.toggle("active");
+    }
   </script>
 </body>
 </html>
